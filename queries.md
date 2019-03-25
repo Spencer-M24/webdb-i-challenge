@@ -2,20 +2,20 @@
 
 ## find all customers that live in London. Returns 6 records.
 
-Select \* from Customers
-WHere City = 'London';
+SELECT \* from Customers
+WHERE City = 'London';
 
 ## find all customers with postal code 1010. Returns 3 customers.
 
-Select \* From customers Where postal code= '1010';
+SELECT \* From customers WHERE postal code= '1010';
 
 ## find the phone number for the supplier with the id 11. Should be (010) 9984510.
 
-Select phone from suppliers Where supplierid = 11;
+SELECT phone from suppliers WHERE supplierid = 11;
 
 ## list orders descending by the order date. The order with date 1997-02-12 should be at the top.
 
-select \* from orders order by orderdate desc
+SELECT \* from orders order by orderdate desc
 
 ## find all suppliers who have names longer than 20 characters. You can use `length(SupplierName)` to get the length of the name. Returns 11 records.
 
@@ -31,7 +31,7 @@ insert into customers (CustomerName, ContactName, Address, City, PostalCode, Cou
 
 ## update _Bilbo Baggins_ record so that the postal code changes to _"11122"_.
 
-update customers set postalcode = "11122" where customerid = 92
+update customers set postalcode = "11122" WHERE customerid = 92
 
 ## list orders grouped by customer showing the number of orders per customer. _Rattlesnake Canyon Grocery_ should have 7 orders.
 
